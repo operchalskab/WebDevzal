@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/formsSave}"th:object="${samochod}" method="post">
+    <label for="marka">Marka</label>
+    <input id="marka" type="text" th:field="*{marka}">
+    <label for="model">Model</label>
+    <input id="model" type="text" th:field="*{model}">
+    <label for="rocznik">Rocznik</label>
+    <input id="rocznik" type="text" th:field="*{rocznik}">
+    <label for="cena">Cena</label>
+    <input id="cena" type="text" th:field="*{cena}">
+    <label for="przebieg">Przebieg</label>
+    <input id="przebieg" type="text" th:field="*{przebieg}">
+
+    <input type="submit" value="Zapisz">
+
+</form>
+</body>
+</html>
